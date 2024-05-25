@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+        --bg-page: linear-gradient(90deg, cyan, violet, pink, white);
+        --color-fonte: #272262;
+        --bg-buttom: transparent;
+        --bg-Hover: white;
+        --color-border: #272262;
+        --color-borderFocus: #4038a0;
+        --color-hr: white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:'Roboto', sans-serif;
+    background-image: var(--bg-page)
+}   
+
+.box, form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    
+}
+form{
+    width: 100%;
+
+}
+h1{
+    margin-bottom: 20px;
+    color: var(--color-text);
+
+    
+}
+.box { 
+    
+    width: auto;
+    height: 500px;
+    margin: 10% 35%;
+    border-radius: 18px;
+    color: var(--color-fonte);
+    background-color: #ffffff40;
+    box-shadow: 3px 2px 1px 0px #00000070;
+}
+#admin{
+   
+   padding: 0;
+   justify-content: left;
+   align-items: center;
+   border: 1px solid rgb(255, 192, 203);
+   
+}
+
+input{
+    width: 80%;
+    padding: 15px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    margin: 5px 0;    
+}
+input:hover{
+    background-color:rgb(255, 192, 203);
+    color: white;
+}
+
+button{
+margin-top: 10px;
+background-color:ghostwhite;
+border: 1px solid rgb(255, 192, 203);
+padding: 13px;
+width: 50%;
+border-radius: 10px;
+font-size: 15px;
+}
+
+button:hover{
+    color: var(--);
+    background-color:var(--bg-Hover);
+}

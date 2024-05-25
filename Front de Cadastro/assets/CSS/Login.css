@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --bg-page: linear-gradient(90deg, cyan, violet, pink, white);
+    --color-fonte: #272262;
+    --bg-buttom: transparent;
+    --bg-Hover: white;
+    --color-border: #272262;
+    --color-borderFocus: #4038a0;
+    --color-hr: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+Body{
+    background-image: var(--bg-page);
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.card{
+    background-color: #ffffff40;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 1px 0px #00000070;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-fonte);
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid var(--color-border);
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.label-float input:focus{
+    border-bottom: 2px solid var(--color-borderFocus);
+}
+
+.label-float label{
+    color: var(--color-fonte);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+
+}
+.label-float input:focus + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: var(--color-fonte);
+}
+button{
+    background-color: var(--bg-buttom);
+    border-color: 1px solid cyan;
+    border-radius: 4px;
+    color: var(--color-fonte);
+    font-size: 12pt;
+    margin-top: 20px;
+    font-weight: bolder;
+    padding: 7px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    
+}
+button:hover{
+    background-color: #272262;
+    color: var(--bg-Hover);
+    transition: all .3s ease-out;
+}
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 70%;
+    border: 1px solid var(--color-hr);
+}
+
+a{
+    font-weight: bold;
+    transition: all .3s ease-out;
+}
+a:hover{
+    color: var(--bg-Hover);
+    transition: all .3s ease-out;
+}
+
+@media screen {
+    
+}

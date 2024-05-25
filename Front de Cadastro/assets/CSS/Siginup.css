@@ -1,84 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 :root{
-        --bg-page: linear-gradient(90deg, cyan, violet, pink, white);
-        --color-fonte: #272262;
-        --bg-buttom: transparent;
-        --bg-Hover: white;
-        --color-border: #272262;
-        --color-borderFocus: #4038a0;
-        --color-hr: white;
+    --bg-page: linear-gradient(90deg, cyan, violet, pink, white);
+    --bg-buttom: transparent;
+    --bg-hover: #272262;
+    --color-fonte: #272262;
+    --color-Hover: white;
+    --color-border: #272262;
+    --color-borderFocus: #4038a0;
+    --color-hr: white;
 }
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
 }
-body{
-    font-family:'Roboto', sans-serif;
-    background-image: var(--bg-page)
-}   
 
-.box, form{
+Body{
+    background-image: var(--bg-page);
+
+}
+
+.container{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center ;
-    
-}
-form{
+    align-items: center;
     width: 100%;
+    margin-top: 8%;
+}
 
+.card{
+    
+    background-color: #ffffff40;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 1px 0px #00000070;
 }
 h1{
     margin-bottom: 20px;
-    color: var(--color-text);
-
+    color: var(--color-text);   
+}
+.label-float input{
+        width: 100%;
+        padding: 5px;
+        display: inline-block;
+        border: 0;
+        border-bottom: 2px solid var(--color-border);
+        background-color: transparent;
+        outline: none;
+        min-width: 180px;
+        font-size: 16px;
+        transition: all .3s ease-out;
+        border-radius: 0;
+    }
+.label-float{
+        position: relative;
+        padding-top: 13px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+.label-float input:focus{
+        border-bottom: 2px solid var(--color-borderFocus);
+    }
+    
+.label-float label{
+        color: var(--color-fonte);
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 13px;
+        transition: all .3s ease-out;
     
 }
-.box { 
-    
-    width: auto;
-    height: 500px;
-    margin: 10% 35%;
-    border-radius: 18px;
+.label-float input:focus + label,
+.label-float input:valid + label{
+        font-size: 13px;
+        margin-top: 0;
+        color: var(--color-fonte);
+}
+.fa-eye{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
     color: var(--color-fonte);
-    background-color: #ffffff40;
-    box-shadow: 3px 2px 1px 0px #00000070;
 }
-#admin{
-   
-   padding: 0;
-   justify-content: left;
-   align-items: center;
-   border: 1px solid rgb(255, 192, 203);
-   
-}
+.checkbox{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
 
-input{
-    width: 80%;
-    padding: 15px;
-    border: 0.5px solid black;
-    border-radius: 10px;
-    margin: 5px 0;    
+
 }
-input:hover{
-    background-color:rgb(255, 192, 203);
-    color: white;
+#checkbox{
+    width: 30px;
+    
 }
 
 button{
-margin-top: 10px;
-background-color:ghostwhite;
-border: 1px solid rgb(255, 192, 203);
-padding: 13px;
-width: 50%;
-border-radius: 10px;
-font-size: 15px;
+    background-color: var(--bg-buttom);
+    border-color: 1px solid cyan;
+    border-radius: 4px;
+    color: var(--color-fonte);
+    font-size: 12pt;
+    margin-top: 20px;
+    font-weight: bolder;
+    padding: 7px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    
+}
+button:hover{
+    background-color: var(--bg-hover);
+    color: var(--color-Hover);
+    transition: all .3s ease-out;
+}
+.justify-center{
+    display: flex;
+    justify-content: center;
 }
 
-button:hover{
-    color: var(--);
-    background-color:var(--bg-Hover);
+hr{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 70%;
+    border: 1px solid var(--color-hr);
+}
+p{
+    text-align: center;
+}
+
+a{
+    font-weight: bold;
+    transition: all .3s ease-out;
+}
+a:hover{
+    color: var(--color-Hover);
+    transition: all .2s ease-out;
 }

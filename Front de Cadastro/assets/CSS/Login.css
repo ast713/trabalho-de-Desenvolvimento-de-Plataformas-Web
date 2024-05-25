@@ -2,9 +2,10 @@
 
 :root{
     --bg-page: linear-gradient(90deg, cyan, violet, pink, white);
-    --color-fonte: #272262;
     --bg-buttom: transparent;
-    --bg-Hover: white;
+    --bg-hover: #272262;
+    --color-fonte: #272262;
+    --color-Hover: white;
     --color-border: #272262;
     --color-borderFocus: #4038a0;
     --color-hr: white;
@@ -73,9 +74,17 @@ h1{
     transition: all .3s ease-out;
 
 }
-.label-float input:focus + label{
+.label-float input:focus + label,
+.label-float input:valid + label{
     font-size: 13px;
     margin-top: 0;
+    color: var(--color-fonte);
+}
+.fa-eye{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
     color: var(--color-fonte);
 }
 button{
@@ -92,8 +101,8 @@ button{
     
 }
 button:hover{
-    background-color: #272262;
-    color: var(--bg-Hover);
+    background-color: var(--bg-hover);
+    color: var(--color-Hover);
     transition: all .3s ease-out;
 }
 .justify-center{
@@ -113,8 +122,8 @@ a{
     transition: all .3s ease-out;
 }
 a:hover{
-    color: var(--bg-Hover);
-    transition: all .3s ease-out;
+    color: var(--color-Hover);
+    transition: all .2s ease-out;
 }
 
 @media screen {

@@ -33,7 +33,7 @@ Body{
 .card{
     
     background-color: #ffffff40;
-    padding: 30px 50px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 3px 2px 1px 0px #00000070;
 }
@@ -42,7 +42,7 @@ h1{
     color: var(--color-text);   
 }
 .label-float input{
-        width: 100%;
+        width: 350px;
         padding: 5px;
         display: inline-block;
         border: 0;
@@ -100,9 +100,9 @@ h1{
     
 }
 
-button{
+.button{
     background-color: var(--bg-buttom);
-    border-color: 1px solid cyan;
+    border-color: var(--color-border);
     border-radius: 4px;
     color: var(--color-fonte);
     font-size: 12pt;
@@ -115,8 +115,28 @@ button{
 }
 button:hover{
     background-color: var(--bg-hover);
+    border-color: var(--color-Hover);
     color: var(--color-Hover);
     transition: all .3s ease-out;
+}
+#msgSucesso{
+    display: none;
+    font-weight: bolder;
+    background: rgb(0, 233, 47);
+    margin-top: 20px;
+    color: green;
+    border-radius: 5px;
+    padding: 8px;
+}
+.msgErro{
+    display: none;
+    font-weight: bolder;
+    background-color: rgb(255, 182, 182);
+    margin-top: 20px;
+    color: red;
+    border-radius: 5px;
+    padding: 8px;    
+    
 }
 .justify-center{
     display: flex;

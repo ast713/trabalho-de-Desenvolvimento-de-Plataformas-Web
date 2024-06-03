@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:Root{
+  --bg-menuNavegação: rgb(255, 140, 0);
+  --bg-headerBaner: rgb(255, 255, 255);
+  --fonte-geral: rgb(0, 0, 0);
+  --fonte-hover: rgb(255, 255, 255);
+  --bg-fundo: rgb(255, 255, 255);
+  --bg-footer: rgb(71, 74, 81);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto
+}
+
+header, main, aside{
+  display: flex;
+  margin: 3px;
+  background-color: var(--bg-menuNavegação);
+  box-shadow: 1px 2px 5px #2c2c2c;
+  border-radius: 5px;
+  width: 100vw;
+  
+}
+
+body{
+  display: flex;
+  margin: 3px;  
+  flex: 1 1 100vw;
+  flex-wrap: wrap;
+  background: var(--bg-fundo);
+
+  /*flex é o atalho de flex grow | flex shrink | flex basis
+  flex grow é o tamanho do item, flex shrink é a capacidade
+   de redução do item, flex basis é o tamanho inicial do item*/
+}
+
+.logo{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  gap: 8px;
+}
+
+#logo{
+  
+  margin: 8px 0 20px 30px;
+  width: 30px;
+  height: 50px;
+  
+}
+
+#openMenu, #closeMenu{
+  border: none;
+  background: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+  display: none;
+}
+
+header #Logo{
+  flex: 0 1 200px;
+}
+
+header{
+  flex: 1 1 100vw;
+  height: 65PX;
+  position: sticky;
+  margin: 0;
+ 
+  justify-content: space-between;
+  
+}
+
+nav{
+  display: flex;
+  margin: 2px;
+  flex: 1 1 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.itensNavegação{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  margin: 8px;
+  width: 100vw;
+}
+
+.itensNavegação li{
+  
+  padding: 5px 10px;
+  list-style: none;
+  font-size: 14px;
+}
+.itensNavegação a{
+  font-weight: 100;
+  padding: 5px 10px;
+  
+}
+
+.itensNavegação a:hover{
+  font-weight: bold ;
+  transition: 0.2s;
+}
+.promoções{
+  display: none;
+}
+.promoções:hover{
+  display: flex;
+}
+
+#menuHeader a:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--fonte-hover);
+  cursor: pointer;
+  
+  transition: 0.2s;
+}
+
+.menuHeader, .iconHeader{
+  font-size: 18pt;
+  margin-right: 5px;
+}
+
+nav a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--fonte-geral);
+  padding: 2%;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.minhaConta{
+  display: flex;
+}
+
+.minhaConta:hover{
+  color: var(--fonte-hover);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.minhaConta span{
+  font-size: 10px;
+
+}
+
+#iconMinhaConta{
+  margin: 0 5px;
+}
+
+.iconHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconHeader i{
+  margin: 0 15px 0 0 ;
+}
+
+#iconMinhaSacola:hover{
+  cursor: pointer;
+  color: var(--fonte-hover);
+  transition: 0.2s;
+}
+
+#openMenu:hover{
+  cursor: pointer;
+  color: var(--fonte-hover);
+}
+
+.headerBaner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--bg-headerBaner);
+  box-shadow: 2px 2px 5px #2c2c2c;
+  border-radius: 5px;
+  
+}
+
+.headerBanerLeft{
+  flex-basis: 50%;
+  padding-left: 10%;
+ 
+}
+
+.headerBanerLeft h2{
+  font-size: 3.2rem;
+  color: var(--fonte-geral);
+    
+}
+
+.headerBanerLeft p{
+ 
+  line-height: 25px;
+ color: var(--fonte-geral);
+}
+
+.headerBanerRight{
+  height: 100%;
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.headerBanerRight img{
+  width: 55%;
+}
+
+.headerBanerBtn{
+  padding: 10px 50px;
+  margin: 10px 0;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(255, 140, 0);
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  
+}
+
+.headerBanerBtn:hover{
+  background-color: rgb(240, 133, 2);
+  color: var(--fonte-hover);
+  transition: 0.2s;
+}
+
+.cardsMenu{
+  background: var(--bg-headerBaner);
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: 2px 2px 5px #2c2c2c;
+  border-radius: 5px;
+  
+}
+.Produto:hover{
+  cursor: pointer;
+}
+
+.cards{
+  text-align: center;
+  padding: 60px;
+  gap: 8px;
+}
+
+.cards img{
+  
+  width: 150px;
+}
+
+.sair{
+  background: transparent;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 30% ;
+  font-weight: bolder;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.sair:hover{
+  background: beige;
+  color: orange;
+  border-color: orange;
+  cursor: pointer;
+}
+
+footer{
+  display: flex;
+  margin-top: 4px;
+  background-color: var(--bg-footer);
+  box-shadow: 1px 2px 5px #2c2c2c;
+  border-radius: 5px;
+  width: 100vw;
+  height: 10vh;
+  color: white;
+  padding: 20px;
+}
+/*
+main{
+  height: calc(100vh - 224px);
+  flex: 20 1 500px;
+  
+}
+footer{
+  height: 100PX;
+  flex: 1 1 100vw;
+  
+}
+*/
+@media only screen and (max-width: 1024px){
+  .headerBanerLeft p{
+    font-size: 15px;
+    
+  }
+  .headerBanerLeft h2{
+    font-size: 35px;
+  }
+
+  .cardsMenu{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100vw;
+  }
+  .cards{
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  .headerBanerBtn{
+    font-size: 14px;
+    padding: 8px 45px;
+  }
+}
+@media only screen and (max-width: 923px){
+  .headerBanerLeft p{
+    font-size: 14px;
+    
+  }
+  .headerBanerLeft h2{
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  #openMenu, #closeMenu{
+    display: block;
+  }
+  header{
+    justify-content:flex-end ;
+    width: 97vw;
+    border-radius: 15px;
+    margin: 0px 5px 3px 0px;
+  }   
+  .logo{
+    width: 100vw;
+  }
+  #openMenu{
+    margin-left: auto;
+    order: 2;
+    margin-left: 0;
+    
+  }
+  #closeMenu{
+    position: fixed;
+    right: 10px ;
+    top: 40px;
+  }
+  .iconHeader{
+    order: 1;
+    margin-left: 100px;
+    
+  }
+  nav{
+    position: fixed;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+    background: rgba(231, 231, 231, 0.861);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    display: none;
+    
+  }
+  #menuHeader a:hover{
+    background: rgba(193, 193, 193, 0.6);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: brown;   
+    transition: 0.2s;
+    
+  }
+  .headerBaner{
+    display: flex;
+    flex-direction: column;
+  }
+  .headerBanerLeft p{
+    font-size: 14px;
+    
+  }
+  .headerBanerLeft h2{
+    font-size: 30px;
+  }
+
+  .cardsMenu{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .headerBanerBtn{
+    font-size: 14px;
+    padding: 8px 45px;
+  }
+
+}

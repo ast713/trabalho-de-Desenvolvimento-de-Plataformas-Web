@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+:root{
+    --bg-page: linear-gradient(90deg, cyan, violet, pink, white);
+    --bg-button: #333;
+    --bg-hover: #555;
+    --color-font: #272262;
+    --color-hover: white;
+    --color-border: #272262;
+    --color-borderFocus: #4038a0;
+    --color-hr: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: var(--bg-page);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--color-font);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-font);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: var(--color-border);
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #272262  ;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    font-weight: bolder;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: violet;
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.close {
+    color: #aaa;
+    align-self: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal-content label {
+    margin-top: 10px;
+    color: var(--color-font);
+}
+
+.modal-content input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-password img {
+    width: 20px;
+    height: 20px;
+}
+
+.modal-content button[type="submit"] {
+    margin-top: 20px;
+    align-self: center;
+}
+
+@media (max-width: 600px) {
+    table thead {
+        display: none;
+    }
+
+    table, table tbody, table tr, table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+    }
+
+    table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}

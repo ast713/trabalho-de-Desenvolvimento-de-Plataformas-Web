@@ -1,29 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="title" content="Projeto WEB">
-    <title>Pagina inicial</title>
-
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="../CSS/InitialPage.css">
 </head>
 <body>
-    
-    <div class="container">
-        <h1>Bem vindo</h1>
+    <header>
+        <h1>Bem-vindo à Página Inicial</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#" onclick="showAdminLogin()">Área Administrativa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Seção Principal</h2>
+            <p>Conteúdo da página inicial.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minha Empresa</p>
+    </footer>
 
-        <div>
-            <button onclick="Sair()">Sair</button>
+    <div id="adminLoginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAdminLogin()">&times;</span>
+            <h2>Login de Administrador</h2>
+            <div class="label-float">
+                <input type="text" id="adminUser" placeholder="" required>
+                <label for="adminUser">Usuário</label>
+            </div>
+            <div class="label-float">
+                <input type="password" id="adminPass" placeholder="" required>
+                <label for="adminPass">Senha</label>
+            </div>
+            <button onclick="adminLogin()">Entrar</button>
+            <div id="adminLoginError" class="error"></div>
         </div>
     </div>
-        
-   <footer>
 
-      <p id="logado"></p>
-
-   </footer>
-        
     <script src="../JavaScript/InitialPage.js"></script>
 </body>
 </html>

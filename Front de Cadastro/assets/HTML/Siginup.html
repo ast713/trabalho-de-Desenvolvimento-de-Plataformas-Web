@@ -1,77 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="title" content="Projeto API">
-    <title>Siginup</title>
-
-    
+    <title>Cadastro</title>
     <link rel="stylesheet" href="../CSS/Siginup.css">
-    <script src="https://kit.fontawesome.com/92a147f426.js" crossorigin="anonymous"></script>
-    
-
 </head>
 <body>
-    
-         
-   <div class="container">
+    <div class="container">
         <div class="card">
-        
             <h1>Cadastro</h1>
-        
-                 <div id="msgSucesso"></div>
-                    
-                <div class="label-float">
-                    <input type="text" id="nome" placeholder="" required>
-                    <label id="labelNome" for="nome">Nome</label>
-                </div>
-
-                <div class="label-float">
-                    <input type="text" id="usuario" placeholder="" required>
-                    <label id="userLabel" for="usuario">Usuario</label>
-                </div>
-
-                <div class="label-float">
-                    <input type="email" id="email" placeholder="" required>
-                    <label id="emailLabel" for="email">E-mail</label>
-                </div>
-        
-                <div class="label-float">
-                    <input type="password" id="senha" placeholder="" required>
-                    <label id="senhaLabel" for="senha">Senha</label>
-                    <i class="fa-solid fa-eye"></i>
-                    
-                </div>
-                 
-                <div class="label-float">
-                    <input type="password" id="senhaConf" placeholder="" required>
-                    <label id="senhaLabelConf" for="senhaConf">Confirme sua senha</label>
-                    <i class="fa-solid fa-eye conf"></i>
-                </div>
-
-                <div class="checkbox">
-                    <label for="checkbox">Administrador?</label>
-                    <input id="checkbox" type="checkbox" name="checkbox">
-                </div>
-
-                <div class="justify-center">
-                    <button class="button" onclick="Cadastrar()">Cadastrar</button>
-                </div>
-
-                <div class="msgErro"></div>
-        
-                <div class="justify-center">
-                    <hr>
-                </div>
-        
-                <p>Já possui uma conta? <a href="../HTML/Login.html">Faça o login</a></p>
+            <div id="msgErro"></div>
+            <div class="label-float">
+                <input type="text" id="nome" placeholder="" required>
+                <label id="nomeLabel" for="nome">Nome</label>
+            </div>
+            <div class="label-float">
+                <input type="email" id="email" placeholder="" required>
+                <label id="emailLabel" for="email">Email</label>
+            </div>
+            <div class="label-float">
+                <input type="text" id="usuario" placeholder="" required>
+                <label id="usuarioLabel" for="usuario">Usuário</label>
+            </div>
+            <div class="label-float">
+                <input type="password" id="senha" placeholder="" required>
+                <label id="senhaLabel" for="senha">Senha</label>
+                
+            </div>
+            <div class="justify-center">
+                <button onclick="Cadastrar()">Cadastrar</button>
+            </div>
+            <div class="justify-center">
+                <hr>
+            </div>
+            <p>Já tem conta? <a href="../HTML/Login.html">Entrar</a></p>
         </div>
     </div>
-      
-   
-        
     <script src="../JavaScript/Siginup.js" defer></script>
 </body>
 </html>

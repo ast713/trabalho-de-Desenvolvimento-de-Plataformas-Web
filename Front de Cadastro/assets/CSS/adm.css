@@ -71,7 +71,7 @@ table th {
 button {
     padding: 10px 20px;
     color: white;
-    background-color: #272262  ;
+    background-color: #272262;
     border: 1px solid white;
     cursor: pointer;
     transition: all .3s ease-out;
@@ -81,7 +81,7 @@ button {
 
 button:hover {
     background-color: violet;
-    color: white;
+    color: black;
 }
 
 .modal {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
 
 :root{
     --bg-page: linear-gradient(90deg, cyan, violet, pink, white);
@@ -19,7 +19,6 @@
 
 Body{
     background-image: var(--bg-page);
-
 }
 
 .container{
@@ -31,113 +30,110 @@ Body{
 }
 
 .card{
-    
     background-color: #ffffff40;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 3px 2px 1px 0px #00000070;
 }
+
 h1{
     margin-bottom: 20px;
     color: var(--color-text);   
 }
+
 .label-float input{
-        width: 350px;
-        padding: 5px;
-        display: inline-block;
-        border: 0;
-        border-bottom: 2px solid var(--color-border);
-        background-color: transparent;
-        outline: none;
-        min-width: 180px;
-        font-size: 16px;
-        transition: all .3s ease-out;
-        border-radius: 0;
-    }
-.label-float{
-        position: relative;
-        padding-top: 13px;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-.label-float input:focus{
-        border-bottom: 2px solid var(--color-borderFocus);
-    }
-    
-.label-float label{
-        color: var(--color-fonte);
-        pointer-events: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin-top: 13px;
-        transition: all .3s ease-out;
-    
+    width: 350px;
+    padding: 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid var(--color-border);
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+    color: var(--color-fonte);
 }
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid var(--color-borderFocus);
+}
+
+.label-float label{
+    color: var(--color-fonte);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
 .label-float input:focus + label,
 .label-float input:valid + label{
-        font-size: 13px;
-        margin-top: 0;
-        color: var(--color-fonte);
+    font-size: 13px;
+    margin-top: 0;
+    color: var(--color-fonte);
 }
+
 .fa-eye{
     position: absolute;
     top: 15px;
     right: 10px;
     cursor: pointer;
-    color: var(--color-fonte);
-}
-.checkbox{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 10px;
-
-
-}
-#checkbox{
-    width: 30px;
-    
+    color: var (--color-fonte);
 }
 
-.button{
-    background-color: var(--bg-buttom);
-    border-color: var(--color-border);
-    border-radius: 4px;
-    color: var(--color-fonte);
-    font-size: 12pt;
-    margin-top: 20px;
-    font-weight: bolder;
-    padding: 7px;
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-password img {
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #272262;
+    border: 1px solid;
     cursor: pointer;
     transition: all .3s ease-out;
-    
+    font-weight: bolder;
+    border-radius: 4px;
 }
-button:hover{
-    background-color: var(--bg-hover);
-    border-color: var(--color-Hover);
-    color: var(--color-Hover);
-    transition: all .3s ease-out;
+
+button:hover {
+    background-color: violet;
+    color: black;
 }
-#msgSucesso{
+
+
+#msgErro{
     display: none;
     font-weight: bolder;
-    background: rgb(0, 233, 47);
-    margin-top: 20px;
-    color: green;
-    border-radius: 5px;
-    padding: 8px;
-}
-.msgErro{
-    display: none;
-    font-weight: bolder;
-    background-color: rgb(255, 182, 182);
+    background: rgb(255, 182, 182);
     margin-top: 20px;
     color: red;
     border-radius: 5px;
-    padding: 8px;    
-    
+    padding: 8px;
 }
+
 .justify-center{
     display: flex;
     justify-content: center;
@@ -147,8 +143,9 @@ hr{
     margin-top: 10%;
     margin-bottom: 10%;
     width: 70%;
-    border: 1px solid var(--color-hr);
+    border: 1px solid #ffffff00;
 }
+
 p{
     text-align: center;
 }
@@ -157,6 +154,7 @@ a{
     font-weight: bold;
     transition: all .3s ease-out;
 }
+
 a:hover{
     color: var(--color-Hover);
     transition: all .2s ease-out;

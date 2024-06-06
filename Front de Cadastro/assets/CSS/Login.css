@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
 
 :root{
     --bg-page: linear-gradient(90deg, cyan, violet, pink, white);
@@ -19,14 +19,14 @@
 
 Body{
     background-image: var(--bg-page);
-
 }
 
 .container{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 .card{
@@ -35,14 +35,14 @@ Body{
     border-radius: 10px;
     box-shadow: 3px 2px 1px 0px #00000070;
 }
+
 h1{
-    text-align: center;
     margin-bottom: 20px;
-    color: var(--color-fonte);
+    color: var(--color-text);   
 }
 
 .label-float input{
-    width: 100%;
+    width: 350px;
     padding: 5px;
     display: inline-block;
     border: 0;
@@ -53,13 +53,16 @@ h1{
     font-size: 16px;
     transition: all .3s ease-out;
     border-radius: 0;
+    color: var(--color-fonte);
 }
+
 .label-float{
     position: relative;
     padding-top: 13px;
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
 .label-float input:focus{
     border-bottom: 2px solid var(--color-borderFocus);
 }
@@ -72,14 +75,15 @@ h1{
     left: 0;
     margin-top: 13px;
     transition: all .3s ease-out;
-
 }
+
 .label-float input:focus + label,
 .label-float input:valid + label{
     font-size: 13px;
     margin-top: 0;
     color: var(--color-fonte);
 }
+
 .fa-eye{
     position: absolute;
     top: 15px;
@@ -87,34 +91,49 @@ h1{
     cursor: pointer;
     color: var(--color-fonte);
 }
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-password img {
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #272262;
+    border: 0px solid;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    font-weight: bolder;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: violet;
+    color: black;
+}
+
+
 #msgErro{
     display: none;
     font-weight: bolder;
-    background-color: rgb(255, 182, 182);
+    background: rgb(255, 182, 182);
     margin-top: 20px;
     color: red;
     border-radius: 5px;
-    padding: 8px;    
-    
+    padding: 8px;
 }
-button{
-    background-color: var(--bg-buttom);
-    border-color: 1px solid cyan;
-    border-radius: 4px;
-    color: var(--color-fonte);
-    font-size: 12pt;
-    margin-top: 20px;
-    font-weight: bolder;
-    padding: 7px;
-    cursor: pointer;
-    transition: all .3s ease-out;
-    
-}
-button:hover{
-    background-color: var(--bg-hover);
-    color: var(--color-Hover);
-    transition: all .3s ease-out;
-}
+
 .justify-center{
     display: flex;
     justify-content: center;
@@ -124,18 +143,19 @@ hr{
     margin-top: 10%;
     margin-bottom: 10%;
     width: 70%;
-    border: 1px solid var(--color-hr);
+    border: 1px solid #ffffff00;
+}
+
+p{
+    text-align: center;
 }
 
 a{
     font-weight: bold;
     transition: all .3s ease-out;
 }
+
 a:hover{
     color: var(--color-Hover);
     transition: all .2s ease-out;
-}
-
-@media screen {
-    
 }

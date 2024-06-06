@@ -6,45 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="title" content="Projeto API">
     <title>Sign in</title>
-
-    <script src="https://kit.fontawesome.com/92a147f426.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="../CSS/Login.css">
-    
-
 </head>
 <body>
     <div class="container">
         <div class="card">
-
-             <h1>Login</h1>
-
-             <div id="msgErro"></div>
-            
-             <div class="label-float">
-                 <input type="text" id="usuario" placeholder="" required>
-                 <label id="userLabel" for="usuario">Usuario</label>
-             </div>
-
-             <div class="label-float">
+            <h1>Login</h1>
+            <div id="msgErro"></div>
+            <div class="label-float">
+                <input type="text" id="usuario" placeholder="" required>
+                <label id="userLabel" for="usuario">Usuario</label>
+            </div>
+            <div class="label-float">
                 <input type="password" id="senha" placeholder="" required>
                 <label id="senhaLabel" for="senha">Senha</label>
-                <i class="fa-solid fa-eye"></i>
                 
             </div>
-            
             <div class="justify-center">
                 <button onclick="Entrar()">Entrar</button>
             </div>
-
             <div class="justify-center">
                 <hr>
             </div>
-
-             <p>Não tem conta? <a href="../HTML/Siginup.html">Cadastre-se</a></p>
+            <p>Não tem conta? <a href="../HTML/Siginup.html">Cadastre-se</a></p>
         </div>
     </div>
-        
     <script src="../JavaScript/Login.js" defer></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 document.addEventListener('click', () =>{
     setTimeout(() =>{
-        window.location.href = '/assets/HTML/Login.html'
+        window.location.href = '/Front de Cadastro/assets/HTML/Login.html'
         
     }, 200);
 });

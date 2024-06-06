@@ -27,7 +27,7 @@ function Entrar() {
         let token = Math.random().toString(36).substring(2);
         localStorage.setItem('token', token);
         localStorage.setItem('userLogado', JSON.stringify(userValid));
-        window.location.href = '../HTML/InitialPage.html';
+        window.location.href = 'InitialPage.html';
     } else {
         userLabel.setAttribute('style', 'color: red');
         usuario.setAttribute('style', 'border-color: red');
